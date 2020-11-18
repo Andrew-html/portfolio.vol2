@@ -1,0 +1,272 @@
+stylesheet_vol2.css
+
+.css{}
+
+/*{.header}*/
+header {
+  width:100%;
+  height: 250px;
+  background-color:rgba(255, 255, 255);
+  position: fixed;
+  top:0px;
+  left:0px;
+  z-index: 10;
+}
+
+.container{
+  max-width:1900px;
+  margin:0 auto;
+  display:block;
+}
+
+.container h1{
+  margin-top:60px;
+  float: left;
+}
+
+.container h1:hover{
+  filter:alpha(opacity=70);
+  opacity: 0.7;
+}
+
+.container h1 img{
+  width:400px;
+}
+
+.container ul{
+  display:inline-block;
+  display:flex;
+  float:right;
+  list-style:none;
+  width:900px;
+  margin-top:150px;
+}
+
+.container li{
+  margin-right:20px;
+  width:20%;
+}
+
+.container li img{
+  height:70px;
+}
+/*{./header}*/
+
+/*{.section}*/
+section{
+  position: relative;
+}
+
+section .inner{
+  z-index:2;
+  position:relative;
+  margin-top:180px;
+}
+
+.inner h1{
+  padding-top:120px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.inner h2{
+  text-align: center;
+}
+
+.inner h2 img{
+  height: 300px;
+}
+
+.inner h3{
+  text-align: center;
+}
+
+.inner p{
+  margin:0 auto;
+}
+/*{./section}*/
+
+/*{.top_wrapper}*/
+.top_wrapper{
+  position: relative;
+  background-color: black
+}
+
+/*{.top_wrapper #top}*/
+.top_wrapper section#top{
+  margin-top:130px;
+}
+
+.top_wrapper section#top .intro{
+  padding-top: 300px;
+  position: relative
+}
+
+.top_wrapper section#top .intro h1 img{
+    width:100%;
+    max-width: 1900px;
+}
+
+.top_wrapper section#top .intro h2{
+  width:100%;
+  position: absolute;
+  top:75%;
+  left:30%;
+  animation-delay:1s;
+}
+
+@media screen and (min-width:1920px){
+  .top_wrapper section#top .intro h2{
+    width:100%;
+    position: absolute;
+    top:1050px;
+    left:580px;
+  }
+}
+
+.top_wrapper section#top .intro h2 img{
+  height:30%;
+  width:30%;
+  max-width: 600px;
+  max-height:400px;
+}
+
+/*{/.top_wrapper #top}*/
+
+/*{.top_wrapper #about}*/
+.top_wrapper section#about{
+  height:1200px;
+  margin-top:500px;
+}
+
+.top_wrapper section#about h3{
+  margin-right: 1600px;
+}
+
+.top_wrapper section#about h3 img{
+  height: 200px;
+}
+
+.top_wrapper section#about .profile_txt{
+  color:white;
+  text-align: center;
+  margin-right: 500px;
+  margin-top:-50px;
+}
+/*{/.top_wrapper #about}*/
+
+/*{.top_wrapper #works}*/
+.top_wrapper section#works{
+  height:1200px;
+  margin-top:500px;
+}
+
+/*.works_block*/
+.works_block{
+  text-align: center;
+  margin-right: 1200px;
+}
+
+.works_block img{
+  width:500px;
+}
+/*/.works_block*/
+/*{/.top_wrapper #works}*/
+
+/*{.top_wrapper #blog}*/
+.top_wrapper section#blog{
+  height:500px;
+  margin-top:400px;
+}
+
+.top_wrapper section#blog h3{
+  text-align: center;
+  font-size: 1.8em;
+}
+/*{/.top_wrapper #blog}*/
+
+/*{.top_wrapper #contact}*/
+.top_wrapper section#contact{
+  height:800px;
+  margin-top:300px;
+}
+
+.top_wrapper section#blog h3{
+  text-align: center;
+}
+
+/*{/.top_wrapper #contact}*/
+/*{/.top_wrapper}*/
+
+/*{.footer}*/
+footer .white{
+  height:20px;
+  background-color:#98fb98;
+}
+
+footer .green{
+  height:20px;
+  background-color: green;
+}
+/*{/.footer}*/
+
+/*------------------------------------------------------------------------*/
+/*その他*/
+button{
+  background:black;
+  font-family: SignPainter;
+  color:white;
+  border:none;
+  position:relative;
+  border-top:2px solid white;
+  border-bottom:2px solid white;
+  height:60px;
+  font-size:2.5em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  margin-top:100px;
+}
+button:hover{
+  background:black;
+  color:white;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #66cdaa;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.fade{
+  opacity:0;
+  animation-name: fade-in-top;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fade-in-top{
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
