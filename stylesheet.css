@@ -1,6 +1,9 @@
-stylesheet.css
+stylesheet_vol2.css
 
-css.{}
+.css{}
+*{
+  box-sizing: border-box;
+}
 
 /*{.header}*/
 header {
@@ -14,9 +17,10 @@ header {
 }
 
 .container{
-  max-width:1900px;
+  max-width:100%;
   margin:0 auto;
   display:block;
+  position:relative;
 }
 
 .container h1{
@@ -34,22 +38,42 @@ header {
 }
 
 .container ul{
-  display:inline-block;
   display:flex;
-  float:right;
   list-style:none;
-  width:900px;
+  width:45%;
+  position:absolute;
+  top:10%;
+  left:47%;
   margin-top:150px;
 }
 
 .container li{
-  margin-right:20px;
-  width:20%;
+  margin-right:7%;
+  width:14%;
 }
 
 .container li img{
-  height:70px;
+  height:60%;
 }
+
+.container .menu_icon{
+  visibility:hidden;
+  position:absolute;
+  top:80px;
+  left:80%;
+  width:30%;
+  height:20%;
+}
+
+@media screen and (max-width:1025px){
+  .container ul{
+    visibility:hidden;
+  }
+  .container .menu_icon{
+    visibility:visible;
+  }
+}
+
 /*{./header}*/
 
 /*{.section}*/
@@ -152,6 +176,12 @@ section .inner{
   text-align: center;
   margin-right: 500px;
   margin-top:-50px;
+  width:100%;
+}
+
+.top_wrapper section#about .profile_txt img{
+  width:100%;
+  max-width: 1920px;
 }
 /*{/.top_wrapper #about}*/
 
@@ -162,6 +192,9 @@ section .inner{
 }
 
 /*.works_block*/
+.works_blocks{
+  position: relative;
+}
 .works_block{
   text-align: center;
   margin-right: 1200px;
@@ -169,6 +202,13 @@ section .inner{
 
 .works_block img{
   width:500px;
+}
+
+@media screen and (max-width:1025px){
+  .works_block{
+    position: absolute;
+    left:15%;
+  }
 }
 /*/.works_block*/
 /*{/.top_wrapper #works}*/
