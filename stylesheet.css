@@ -66,7 +66,7 @@ header {
   height:20%;
 }
 
-@media screen and (max-width:1025px){
+@media screen and (max-width:1100px){
   .container ul{
     visibility:hidden;
   }
@@ -132,29 +132,28 @@ section .inner{
     max-width: 1900px;
 }
 
-.top_wrapper section#top .intro h2{
-  width:100%;
+.top_wrapper section#top  h2{
   position: absolute;
-  top:75%;
-  left:30%;
+  top:65%;
+  left:60%;
   animation-delay:1s;
 }
 
-@media screen and (min-width:1920px){
-  .top_wrapper section#top .intro h2{
-    width:100%;
+@media screen and (min-width:1900px){
+  .top_wrapper section#top h2{
     position: absolute;
-    top:1050px;
-    left:580px;
+    top:65%;
+    left:56%;
   }
 }
 
-.top_wrapper section#top .intro h2 img{
-  height:30%;
-  width:30%;
-  max-width: 600px;
-  max-height:400px;
+.top_wrapper section#top h2 img{
+  width:80%;
+  height:80%;
+  max-width:800px;
+  max-height:800px;
 }
+
 
 /*{/.top_wrapper #top}*/
 
